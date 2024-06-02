@@ -30,8 +30,8 @@ const Header = () => {
   return (
     <div>
       <Navbar fluid rounded>
-        <Link>
-          <Navbar.Brand href="/">
+        <Link to={'/'}>
+          <Navbar.Brand >
             <img
               src="https://abubakar13.vercel.app/favicon.ico"
               className="mr-3 h-6 sm:h-9"
