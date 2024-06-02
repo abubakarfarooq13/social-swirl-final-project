@@ -31,15 +31,15 @@ const FullDetails = () => {
                       />
                     </div>
                     <div className="lg:flex-grow md:w-1/2   flex  flex-col  items-center gap-4 ">
-                      <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+                      <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium dark:text-white text-gray-900">
                         {item.cart.title}
                       </h1>
-                      <p className="mb-8 leading-relaxed">
+                      <p className="mb-8 leading-relaxed dark:text-white">
                         {item.cart.description}
                       </p>
                       <div className="flex justify-around w-full">
                         <div>
-                          <span className="text-2xl">
+                          <span className="text-2xl dark:text-white">
                             RS{" "}
                             <span className="text-2xl text-blue-500">
                               {item.cart.price}

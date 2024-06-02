@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -12,9 +13,9 @@ const Footer = () => {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  <a href="#" className=" hover:underline">
+                  <Link to={"/about"} className=" hover:underline">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
                   <a href="#" className="hover:underline">
@@ -49,14 +50,18 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <Link
+                    to={"https://www.facebook.com/abubakarfarooq13/"}
+                    target="blank"
+                    className="hover:underline"
+                  >
                     Facebook
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <Link to={"/contact"} className="hover:underline">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -116,8 +121,8 @@ const Footer = () => {
               Reserved.
             </span>
             <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
-              <a
-                href="#"
+              <Link
+                to={"https://www.facebook.com/abubakarfarooq13/"}
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
@@ -134,7 +139,7 @@ const Footer = () => {
                   />
                 </svg>
                 <span className="sr-only">Facebook page</span>
-              </a>
+              </Link>
               <a
                 href="#"
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
@@ -169,8 +174,8 @@ const Footer = () => {
                 </svg>
                 <span className="sr-only">Twitter page</span>
               </a>
-              <a
-                href="#"
+              <Link
+                to={"https://github.com/abubakarfarooq13"}
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
               >
                 <svg
@@ -187,7 +192,7 @@ const Footer = () => {
                   />
                 </svg>
                 <span className="sr-only">GitHub account</span>
-              </a>
+              </Link>
               <a
                 href="#"
                 className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
