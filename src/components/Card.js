@@ -10,7 +10,15 @@ const Card = ({ data, loading, error }) => {
     return <Spinner />;
   }
   if (error !== null) {
-    return <h1>Error</h1>;
+    return  <div className="h-96 flex justify-center items-center flex-col">
+        <h1 className="text-center text-4xl dark:text-red-500 mt-4 text-red-500 ">
+          Error
+        </h1>
+        <br />
+        <h1 className="text-center text-4xl dark:text-red-500 text-red-500">
+          API LIMIT REACHED
+        </h1>
+      </div>;
   }
   const cartHandler = (item) => {
     dispatch(addToCart(item));
